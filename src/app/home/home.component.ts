@@ -10,9 +10,8 @@ export class HomeComponent implements OnInit {
   constructor() { }
   user = {
     "name" : "Manan Kataria",
-    "about" : "Frontend Developer, Angular",
+    "about" : "and I'm a Frontend Developer",
     "btn1_text" : "Download CV",
-    "btn2_text" : "Contact Me" 
   }
   ngOnInit(): void {
   }

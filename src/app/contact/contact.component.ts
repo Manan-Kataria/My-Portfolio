@@ -42,4 +42,7 @@ export class ContactComponent implements OnInit {
     console.log("Form submitted", this.contactForm);
   }
 
+  iconClicked(site: any){
+    console.log(`${site} clicked`);        
+  }
 }

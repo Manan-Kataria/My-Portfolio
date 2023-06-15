@@ -1,24 +1,28 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Contact Me</h1>
+            <div class="heading">Contact Me</div>
             <div class="row">
                 <div class="col-md-6">
-                    <div>Get in Touch</div>
-                    <table>
+                    <div class="subHeading">Get in Touch</div>
+                    <table class="table">
                         <tr *ngFor="let info of contactInfo">
                             <td>
-                                <i [ngClass]="info.icon"></i>
+                                <i class="icon" [ngClass]="info.icon"></i>
                             </td>
                             <td>
-                                {{info.property}}
                                 {{info.value}}
                             </td>
                         </tr>
                     </table>
+                    <div>
+                        <i (click)="iconClicked('facebook')" class="bi bi-facebook icons"></i>
+                        <i (click)="iconClicked('linkedin')" class="bi bi-linkedin icons"></i>
+                        <i (click)="iconClicked('twitter')" class="bi bi-twitter icons"></i>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <div>Message me</div>
+                    <div class="subHeading">Message me</div>
                     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                         <label> Name : </label>
                         <input formControlName="name" class="form-control" type="text" />

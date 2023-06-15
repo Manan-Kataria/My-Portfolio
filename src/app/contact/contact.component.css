@@ -1,3 +1,12 @@
 .errorMsg{
     color: red;
 }
+
+.icons{
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+.icon{
+    font-size: 30px;
+}
