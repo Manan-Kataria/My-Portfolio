@@ -1,0 +1,32 @@
+.hello {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.about {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.infoContainer {
+    position: relative;
+    height: 100%;
+
+}
+
+.infoContainer2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.myimg{
+    border: 1px solid white;
+    border-radius: 10px;
+}
