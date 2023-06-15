@@ -8,12 +8,12 @@
         <div class="col-md-6">
             <div class="infoContainer">
                 <div class="infoContainer2">
-                    <div class="hello">Hi, my name is </div>
-                    <div class="name">{{ user.name }}</div>
-                    <div class="about">{{ user.about }}</div>
+                    <div class="hello"> {{home?.greetings}} </div>
+                    <div class="name">{{ home?.name }}</div>
+                    <div class="about">{{ home?.about }}</div>
                     <br/>
                     <div class="buttons">
-                        <button (click)="downloadFunc()" class="btn btn-danger">{{ user.btn1_text }}</button>
+                        <button (click)="downloadFunc()" class="btn btn-danger"> Download CV </button>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoService } from '../Services/info.service';
 
 @Component({
   selector: 'app-home',
@@ -7,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-  user = {
-    "name" : "Manan Kataria",
-    "about" : "and I'm a Frontend Developer",
-    "btn1_text" : "Download CV",
-  }
+  constructor(
+    private infoService : InfoService
+  ) { }
+  home : any;
   ngOnInit(): void {
+    this.home = this.infoService?.user?.home;
+    console.log(this.home);
   }
 
   iconClicked(site: any){

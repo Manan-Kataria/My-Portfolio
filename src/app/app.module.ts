@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { WorkComponent } from './work/work.component';
 import { SkillsComponent } from './skills/skills.component';
+import { InfoService } from './Services/info.service';
 
 @NgModule({
   declarations: [
@@ -17,14 +18,14 @@ import { SkillsComponent } from './skills/skills.component';
     AboutComponent,
     ContactComponent,
     WorkComponent,
-    SkillsComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [InfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

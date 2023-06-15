@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { InfoService } from '../Services/info.service';
 
 @Component({
   selector: 'app-contact',
@@ -9,32 +10,13 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   constructor(
+    private infoService : InfoService,
     private fb: FormBuilder
   ) { }
   contactForm: any;
-  contactInfo = [
-    {
-      "property": "Name",
-      "value": "Manan Kataria",
-      "icon": "bi bi-person-fill"
-    },
-    {
-      "property": "Address",
-      "value": "Delhi, India",
-      "icon": "bi bi-pin-map-fill"
-    },
-    {
-      "property": "Email",
-      "value": "katariamanan1997@gmail.com",
-      "icon": "bi bi-envelope-fill"
-    },
-    {
-      "property": "Phone",
-      "value": "9643778784",
-      "icon": "bi bi-telephone-fill"
-    }
-  ]
+  contactInfo : any;
   ngOnInit(): void {
+    this.contactInfo = this.infoService?.user?.contact;
     this.contactForm=this.fb.group({
       "name" : ["", [Validators.required]],
       "email" : ["", [Validators.required, Validators.email]],
