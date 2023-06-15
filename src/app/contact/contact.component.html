@@ -1,23 +1,50 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-12" style="text-align: center;">
+        <div class="col-md-12">
             <h1>Contact Me</h1>
-            <div class="col-md-6">
-                <div>Get in Touch</div>
-                <table>
-                    <tr *ngFor="let info of contactInfo">
-                        <td>
-                            <i [ngClass]="info.icon"></i>
-                        </td>
-                        <td>
-                            {{info.property}}
-                            {{info.value}}
-                        </td>
-                    </tr>
-                </table>
-            </div>            
-            <div class="col-md-6">
-
+            <div class="row">
+                <div class="col-md-6">
+                    <div>Get in Touch</div>
+                    <table>
+                        <tr *ngFor="let info of contactInfo">
+                            <td>
+                                <i [ngClass]="info.icon"></i>
+                            </td>
+                            <td>
+                                {{info.property}}
+                                {{info.value}}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <div>Message me</div>
+                    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                        <label> Name : </label>
+                        <input formControlName="name" class="form-control" type="text" />
+                        <div class="errorMsg"
+                            *ngIf="this.contactForm.controls.name.errors && this.contactForm.controls.name.touched">
+                            Please enter a valid name.</div>
+                        <label> Email : </label>
+                        <input formControlName="email" class="form-control" type="text" />
+                        <div class="errorMsg"
+                            *ngIf="this.contactForm.controls.email.errors && this.contactForm.controls.email.touched">
+                            Please enter a valid email.</div>
+                        <label> Subject : </label>
+                        <input formControlName="subject" class="form-control" type="text" />
+                        <div class="errorMsg"
+                            *ngIf="this.contactForm.controls.subject.errors && this.contactForm.controls.subject.touched">
+                            Please enter a valid subject.</div>
+                        <label> Body : </label>
+                        <textarea rows="4" formControlName="body" class="form-control"></textarea>
+                        <div class="errorMsg"
+                            *ngIf="this.contactForm.controls.body.errors && this.contactForm.controls.body.touched">
+                            Please enter a valid body text.</div>
+                        <br />
+                        <button [disabled]="this.contactForm.status == 'INVALID'" class="btn btn-primary"
+                            type="submit">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
