@@ -27,6 +27,11 @@ export class ContactComponent implements OnInit {
       "property": "Email",
       "value": "katariamanan1997@gmail.com",
       "icon": "bi bi-envelope-fill"
+    },
+    {
+      "property": "Phone",
+      "value": "9643778784",
+      "icon": "bi bi-telephone-fill"
     }
   ]
   ngOnInit(): void {

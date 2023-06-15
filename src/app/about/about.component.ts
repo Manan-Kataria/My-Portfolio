@@ -15,4 +15,13 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  downloadFunc(){
+    var anchor : any = document.createElement('a');
+    anchor.setAttribute('href','../../assets/documents/MyCV.pdf');
+    anchor.setAttribute('download','');
+    document.body.appendChild(anchor);
+    anchor.click();
+    anchor.parentNode.removeChild(anchor);
+}
+
 }

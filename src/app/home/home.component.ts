@@ -16,4 +16,16 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  iconClicked(site: any){
+    console.log(`${site} clicked`);        
+  }
+
+  downloadFunc(){
+    var anchor : any = document.createElement('a');
+    anchor.setAttribute('href','../../assets/documents/MyCV.pdf');
+    anchor.setAttribute('download','');
+    document.body.appendChild(anchor);
+    anchor.click();
+    anchor.parentNode.removeChild(anchor);
+}
 }
