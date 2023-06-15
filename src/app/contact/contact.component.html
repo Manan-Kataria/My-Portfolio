@@ -5,25 +5,13 @@
             <div class="col-md-6">
                 <div>Get in Touch</div>
                 <table>
-                    <tr>
-                        <td><i class="bi bi-person-fill"></i></td>
+                    <tr *ngFor="let info of contactInfo">
                         <td>
-                            <div>Name</div>
-                            <div>Manan Kataria</div>
+                            <i [ngClass]="info.icon"></i>
                         </td>
-                    </tr>
-                    <tr>
-                        <td><i class="bi bi-pin-map-fill"></i></td>
                         <td>
-                            <div>Address</div>
-                            <div>Delhi, India</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><i class="bi bi-envelope-fill"></i></td>
-                        <td>
-                            <div>Email</div>
-                            <div>katariamanan1997@gmail.com</div>
+                            {{info.property}}
+                            {{info.value}}
                         </td>
                     </tr>
                 </table>
