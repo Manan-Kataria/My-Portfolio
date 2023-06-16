@@ -22,14 +22,16 @@ export class ContactComponent implements OnInit {
       "email" : ["", [Validators.required, Validators.email]],
       "subject" : ["", [Validators.required]],
       "body" : ["", [Validators.required]]
-    })
+    });
   }
 
   onSubmit(){
     console.log("Form submitted", this.contactForm);
   }
 
-  iconClicked(site: any){
-    console.log(`${site} clicked`);        
+  iconClicked(site: string){
+    let url : any = this.infoService.user.social[site];
+    console.log(`${site} clicked`);  
+    window.open(url, '_blank');      
   }
 }

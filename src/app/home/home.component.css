@@ -34,5 +34,19 @@
 .icons {
     font-size: 30px;
     margin-top: 100px;
+    cursor: pointer;
 }
 
+.myimg{
+    animation: 
+        changeShape 2s steps(20, end) infinite
+}
+
+@keyframes changeShape {
+    from {
+        }    
+
+    to {
+        
+    }
+}

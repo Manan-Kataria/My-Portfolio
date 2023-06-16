@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
     providedIn: 'root'
 })
 export class InfoService {
-    user = {
+    user : any = {
         "home": {
             "greetings": "Hi, my name is",
             "name": "Manan Kataria",
@@ -59,26 +59,32 @@ export class InfoService {
         "work": {},
         "contact": [
             {
-              "property": "Name",
-              "value": "Manan Kataria",
-              "icon": "bi bi-person-fill"
+                "property": "Name",
+                "value": "Manan Kataria",
+                "icon": "bi bi-person-fill"
             },
             {
-              "property": "Address",
-              "value": "Delhi, India",
-              "icon": "bi bi-pin-map-fill"
+                "property": "Address",
+                "value": "Delhi, India",
+                "icon": "bi bi-pin-map-fill"
             },
             {
-              "property": "Email",
-              "value": "katariamanan1997@gmail.com",
-              "icon": "bi bi-envelope-fill"
+                "property": "Email",
+                "value": "katariamanan1997@gmail.com",
+                "icon": "bi bi-envelope-fill"
             },
             {
-              "property": "Phone",
-              "value": "9643778784",
-              "icon": "bi bi-telephone-fill"
+                "property": "Phone",
+                "value": "9643778784",
+                "icon": "bi bi-telephone-fill"
             }
-          ]
+        ],
+        "social": {
+            "facebook": "https://www.facebook.com/manan.kataria",
+            "instagram": "https://www.instagram.com/_manan_kataria_/",
+            "linkedin": "https://www.linkedin.com/in/manan-kataria-595774170",
+            "twitter": "https://twitter.com/manankataria97?s=11"
+        }
     }
     constructor() { }
 }

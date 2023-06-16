@@ -17,8 +17,10 @@ export class HomeComponent implements OnInit {
     console.log(this.home);
   }
 
-  iconClicked(site: any){
-    console.log(`${site} clicked`);        
+  iconClicked(site: string){
+    let url : any = this.infoService.user.social[site];
+    console.log(`${site} clicked`);  
+    window.open(url, '_blank');      
   }
 
   downloadFunc(){

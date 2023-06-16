@@ -72,5 +72,11 @@
           "value": "9643778784",
           "icon": "bi bi-telephone-fill"
         }
-      ]
+      ],
+    "social":{
+        "facebook": "https://www.facebook.com/manan.kataria",
+        "instagram": "https://www.instagram.com/_manan_kataria_/",
+        "linkedin":"https://www.linkedin.com/in/manan-kataria-595774170",
+        "twitter":"https://twitter.com/manankataria97?s=11"
+    }
 }

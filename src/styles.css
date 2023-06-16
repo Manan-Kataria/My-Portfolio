@@ -5,13 +5,13 @@
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    animation: FadeIn 2s ease-in-out forwards;
 }
 
 .heading {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
+    animation: FadeIn 2s ease-in-out forwards;
 }
 
 .subHeading {
