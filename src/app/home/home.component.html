@@ -10,8 +10,10 @@
                 <div class="infoContainer2">
                     <div class="hello"> {{home?.greetings}} </div>
                     <div class="name">{{ home?.name }}</div>
-                    <div class="about">{{ home?.about }}</div>
-                    <br/>
+                    <div class="containerForTypewriter">
+                        <div class="typed-out">{{home?.about}}</div>
+                    </div>
+                    <br/><br/>
                     <div class="buttons">
                         <button (click)="downloadFunc()" class="btn btn-danger"> Download CV </button>
                     </div>

@@ -8,7 +8,7 @@ export class InfoService {
         "home": {
             "greetings": "Hi, my name is",
             "name": "Manan Kataria",
-            "about": "and I'm a Frontend Developer",
+            "about": "and I'm a Frontend Developer.",
             "facebook": "",
             "linkedin": "",
             "instagram": "",
