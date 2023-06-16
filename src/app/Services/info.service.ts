@@ -8,11 +8,7 @@ export class InfoService {
         "home": {
             "greetings": "Hi, my name is",
             "name": "Manan Kataria",
-            "about": "and I'm a Frontend Developer.",
-            "facebook": "",
-            "linkedin": "",
-            "instagram": "",
-            "twitter": ""
+            "about": "and I'm a Frontend Developer"
         },
         "about": {
             "intro": "I'm Manan and I'm a Frontend Developer.",
@@ -21,60 +17,68 @@ export class InfoService {
         "skills": [
             {
                 "skill": "HTML",
-                "value": "80%"
+                "value": "80%",
+                "icon": "../../assets/skills/html.svg"
             },
             {
                 "skill": "CSS",
-                "value": "60%"
+                "value": "60%",
+                "icon": "../../assets/skills/css.svg"
             },
             {
                 "skill": "Javascript",
-                "value": "80%"
+                "value": "80%",
+                "icon": "../../assets/skills/javascript.svg"
             },
             {
                 "skill": "Angular",
-                "value": "80%"
+                "value": "80%",
+                "icon": "../../assets/skills/angular.svg"
             },
             {
                 "skill": "Java",
-                "value": "60%"
+                "value": "60%",
+                "icon": "../../assets/skills/java.svg"
             },
             {
                 "skill": "Bootstrap",
-                "value": "60%"
+                "value": "60%",
+                "icon": "../../assets/skills/bootstrap.svg"
             },
             {
                 "skill": "MySql",
-                "value": "60%"
+                "value": "60%",
+                "icon": "../../assets/skills/mysql.svg"
             },
             {
                 "skill": "MongoDB",
-                "value": "50%"
+                "value": "50%",
+                "icon": "../../assets/skills/mongodb.svg"
             }
         ],
         "work": {},
         "contact": [
             {
-                "property": "Name",
-                "value": "Manan Kataria",
-                "icon": "bi bi-person-fill"
+              "property": "Name",
+              "value": "Manan Kataria",
+              "icon": "bi bi-person-fill"
             },
             {
-                "property": "Address",
-                "value": "Delhi, India",
-                "icon": "bi bi-pin-map-fill"
+              "property": "Address",
+              "value": "Delhi, India",
+              "icon": "bi bi-pin-map-fill"
             },
             {
-                "property": "Email",
-                "value": "katariamanan1997@gmail.com",
-                "icon": "bi bi-envelope-fill"
+              "property": "Email",
+              "value": "katariamanan1997@gmail.com",
+              "icon": "bi bi-envelope-fill"
             },
             {
-                "property": "Phone",
-                "value": "9643778784",
-                "icon": "bi bi-telephone-fill"
+              "property": "Phone",
+              "value": "9643778784",
+              "icon": "bi bi-telephone-fill"
             }
-        ]
+          ]
     }
     constructor() { }
 }

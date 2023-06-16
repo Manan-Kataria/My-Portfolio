@@ -11,35 +11,43 @@
     "skills": [
         {
             "skill": "HTML",
-            "value": "80%"
+            "value": "80%",
+            "icon": "../../assets/skills/html.svg"
         },
         {
             "skill": "CSS",
-            "value": "60%"
+            "value": "60%",
+            "icon": "../../assets/skills/css.svg"
         },
         {
             "skill": "Javascript",
-            "value": "80%"
+            "value": "80%",
+            "icon": "../../assets/skills/javascript.svg"
         },
         {
             "skill": "Angular",
-            "value": "80%"
+            "value": "80%",
+            "icon": "../../assets/skills/angular.svg"
         },
         {
             "skill": "Java",
-            "value": "60%"
+            "value": "60%",
+            "icon": "../../assets/skills/java.svg"
         },
         {
             "skill": "Bootstrap",
-            "value": "60%"
+            "value": "60%",
+            "icon": "../../assets/skills/bootstrap.svg"
         },
         {
             "skill": "MySql",
-            "value": "60%"
+            "value": "60%",
+            "icon": "../../assets/skills/mysql.svg"
         },
         {
             "skill": "MongoDB",
-            "value": "50%"
+            "value": "50%",
+            "icon": "../../assets/skills/mongodb.svg"
         }
     ],
     "work": {},

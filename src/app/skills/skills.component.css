@@ -1,0 +1,17 @@
+.icons{
+    display: inline-block; 
+    margin: 15px;
+    transition: transform .2s;
+}
+
+.icons:hover{
+    transform: scale(1.5);
+}
+
+.customProgress{
+    transition: transform .2s;
+}
+
+.customProgress:hover{
+    transform: scale(1.2);
+}
