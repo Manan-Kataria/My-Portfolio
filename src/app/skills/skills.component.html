@@ -1,7 +1,8 @@
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="heading">My Skills</div>
+        <div class="col-md-1"></div>
         <div class="col-md-3">
             <div *ngFor="let skill of skills, let i = index">
                 <br/>
@@ -11,6 +12,7 @@
                 <br/>
             </div>
         </div>
+        <div class="col-md-1"></div>
         <div class="col-md-2">
             <div *ngFor="let skill of skills, let i = index">
                 <img class="icons" *ngIf="i<4" [src]="skill?.icon">

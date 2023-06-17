@@ -50,7 +50,55 @@
             "icon": "../../assets/skills/mongodb.svg"
         }
     ],
-    "work": {},
+    "work": {
+        "education" : [
+            {
+                "level" : "B.Tech",
+                "school" : "Bhagwan Parshuram Institute Of Technology",
+                "location" : "Delhi, India",
+                "percentage" : "87.5%"
+            },
+            {
+                "level" : "12th",
+                "school" : "St. Margaret Sr. Sec. School",
+                "location" : "Delhi, India",
+                "percentage" : "91.2%"
+            },
+            {
+                "level" : "10th",
+                "school" : "St. Margaret Sr. Sec. School",
+                "location" : "Delhi, India",
+                "percentage" : "85.5%"
+            }
+            
+        ],
+        "experience" : [
+            {
+                "company" : "Biz2Credit | Biz2X",
+                "location" : "Noida, India",
+                "designation" : "Software Engineer",
+                "project" : "Biz2X Pro"
+            },
+            {
+                "company" : "Infosys",
+                "location" : "Bengaluru, India",
+                "designation" : "Senior System Engineer",
+                "project" : "Converge, CMA, Martini"
+            },
+            {
+                "company" : "Infosys",
+                "location" : "Bengaluru, India",
+                "designation" : "System Engineer",
+                "project" : "Converge, CMA, Martini"
+            },
+            {
+                "company" : "Infosys",
+                "location" : "Mysore, India",
+                "designation" : "System Engineer Trainee",
+                "project" : "Converge, CMA, Martini"
+            }
+        ]
+    },
     "contact": [
         {
           "property": "Name",

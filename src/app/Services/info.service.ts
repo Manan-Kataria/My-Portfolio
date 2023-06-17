@@ -56,34 +56,82 @@ export class InfoService {
                 "icon": "../../assets/skills/mongodb.svg"
             }
         ],
-        "work": {},
+        "work": {
+            "education" : [
+                {
+                    "level" : "B.Tech",
+                    "school" : "Bhagwan Parshuram Institute Of Technology",
+                    "location" : "Delhi, India",
+                    "percentage" : "87.5%"
+                },
+                {
+                    "level" : "12th",
+                    "school" : "St. Margaret Sr. Sec. School",
+                    "location" : "Delhi, India",
+                    "percentage" : "91.2%"
+                },
+                {
+                    "level" : "10th",
+                    "school" : "St. Margaret Sr. Sec. School",
+                    "location" : "Delhi, India",
+                    "percentage" : "85.5%"
+                }
+                
+            ],
+            "experience" : [
+                {
+                    "company" : "Biz2Credit | Biz2X",
+                    "location" : "Noida, India",
+                    "designation" : "Software Engineer",
+                    "project" : "Biz2X Pro"
+                },
+                {
+                    "company" : "Infosys",
+                    "location" : "Bengaluru, India",
+                    "designation" : "Senior System Engineer",
+                    "project" : "Converge, CMA, Martini"
+                },
+                {
+                    "company" : "Infosys",
+                    "location" : "Bengaluru, India",
+                    "designation" : "System Engineer",
+                    "project" : "Converge, CMA, Martini"
+                },
+                {
+                    "company" : "Infosys",
+                    "location" : "Mysore, India",
+                    "designation" : "System Engineer Trainee",
+                    "project" : "Converge, CMA, Martini"
+                }
+            ]
+        },
         "contact": [
             {
-                "property": "Name",
-                "value": "Manan Kataria",
-                "icon": "bi bi-person-fill"
+              "property": "Name",
+              "value": "Manan Kataria",
+              "icon": "bi bi-person-fill"
             },
             {
-                "property": "Address",
-                "value": "Delhi, India",
-                "icon": "bi bi-pin-map-fill"
+              "property": "Address",
+              "value": "Delhi, India",
+              "icon": "bi bi-pin-map-fill"
             },
             {
-                "property": "Email",
-                "value": "katariamanan1997@gmail.com",
-                "icon": "bi bi-envelope-fill"
+              "property": "Email",
+              "value": "katariamanan1997@gmail.com",
+              "icon": "bi bi-envelope-fill"
             },
             {
-                "property": "Phone",
-                "value": "9643778784",
-                "icon": "bi bi-telephone-fill"
+              "property": "Phone",
+              "value": "9643778784",
+              "icon": "bi bi-telephone-fill"
             }
-        ],
-        "social": {
+          ],
+        "social":{
             "facebook": "https://www.facebook.com/manan.kataria",
             "instagram": "https://www.instagram.com/_manan_kataria_/",
-            "linkedin": "https://www.linkedin.com/in/manan-kataria-595774170",
-            "twitter": "https://twitter.com/manankataria97?s=11"
+            "linkedin":"https://www.linkedin.com/in/manan-kataria-595774170",
+            "twitter":"https://twitter.com/manankataria97?s=11"
         }
     }
     constructor() { }

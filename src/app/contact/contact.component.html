@@ -1,10 +1,11 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="heading">Contact Me</div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="subHeading">Get in Touch</div>
+<div class="container-fluid" style="height: 90%;">
+    <div class="row" style="height: 90%;">
+        <div class="col-md-12" style="height: 100%;">
+            <div class="heading" style="height: 10%;">Contact Me</div>
+            <div class="row" style="height: 90%;">
+                <div class="col-md-1"></div>
+                <div class="col-md-5" style="height: 100%;">
+                    <div class="subHeading" style="height: 20%;">Get in Touch</div>
                     <table class="table">
                         <tr *ngFor="let info of contactInfo">
                             <td>
@@ -21,8 +22,8 @@
                         <i (click)="iconClicked('instagram')" class="bi bi-instagram icons"></i>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="subHeading">Message me</div>
+                <div class="col-md-5" style="height: 100%;">
+                    <div class="subHeading" style="height: 20%;">Message me</div>
                     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                         <label> Name : </label>
                         <input formControlName="name" class="form-control" type="text" />
@@ -45,10 +46,11 @@
                             *ngIf="this.contactForm.controls.body.errors && this.contactForm.controls.body.touched">
                             Please enter a valid body text.</div>
                         <br />
-                        <button [disabled]="this.contactForm.status == 'INVALID'" class="btn btn-primary"
+                        <button [disabled]="this.contactForm.status == 'INVALID'" class="btn btn-danger"
                             type="submit">Send Message</button>
                     </form>
                 </div>
+                <div class="col-md-1"></div>
             </div>
         </div>
     </div>

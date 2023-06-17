@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { WorkComponent } from './work/work.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'skills', component: SkillsComponent},
   {path: 'work', component: WorkComponent},
   {path: 'contact', component: ContactComponent},
+  {path: '**', component: PageNotFoundComponent},
 ];
 
 @NgModule({

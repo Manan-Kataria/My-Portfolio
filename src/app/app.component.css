@@ -5,3 +5,13 @@
     height: 50px;
     text-align: center;
 }
+
+
+.portfolio{
+    animation: colors 5s ease-in-out infinite;
+  }
+  
+  @keyframes colors {
+      from {color: rgb(221, 36, 36);}  
+      to {color: black;}  
+  }

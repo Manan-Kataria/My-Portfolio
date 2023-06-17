@@ -1,11 +1,35 @@
-<div class="container">
+<div class="container-fluid">
     <div class="row" style="text-align: center;">
         <div class="heading"> My Work </div>
-        <div class="col-md-4" style="margin-top: 50px;">
-            
+        <div class="col-md-1"></div>
+        <div class="col-md-5" style="margin-top: 50px;">
+            <div class="subHeading">
+                Education
+            </div>
+            <div *ngFor="let edu of education" class="card" style="">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <h5 class="card-title"> {{edu?.level}} </h5>
+                  <p class="card-text"> {{edu?.school}}, {{edu?.location}}</p>
+                  <p class="card-text"> {{edu?.percentage}} </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
         </div>
-        <div class="col-md-8" style="margin-top: 50px;">
-            
+        <div class="col-md-5" style="margin-top: 50px;">
+            <div class="subHeading">
+                Experience
+            </div>
+            <div *ngFor="let exp of experience" class="card" style="">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <h5 class="card-title"> {{exp?.designation}} </h5>
+                  <p class="card-text"> {{exp?.company}}, {{exp?.location}} </p>
+                  <p class="card-text"> {{exp?.project}} </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
         </div>
+        <div class="col-md-1"></div>
     </div>
 </div>

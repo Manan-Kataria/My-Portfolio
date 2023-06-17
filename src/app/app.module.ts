@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { WorkComponent } from './work/work.component';
 import { SkillsComponent } from './skills/skills.component';
 import { InfoService } from './Services/info.service';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { InfoService } from './Services/info.service';
     AboutComponent,
     ContactComponent,
     WorkComponent,
-    SkillsComponent
+    SkillsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

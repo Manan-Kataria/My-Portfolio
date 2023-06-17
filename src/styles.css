@@ -7,11 +7,15 @@
     margin: 0;
 }
 
+html,body{
+    height: 100%;margin: 0;
+}
+
 .heading {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    animation: FadeIn 2s ease-in-out forwards;
+    /*animation: FadeIn 2s ease-in-out forwards;*/
 }
 
 .subHeading {
