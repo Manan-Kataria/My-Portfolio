@@ -1,0 +1,129 @@
+{
+    "home": {
+        "greetings": "Hi, my name is",
+        "name": "Srishti Bhargava",
+        "about": "and I'm a Graphic Designer"
+    },
+    "about": {
+        "intro": "I'm Srishti and I'm a Graphic Designer.",
+        "details": "Oil spills are another source of water pollution. In April 2010, the Deepwater Horizon oil rig exploded in the Gulf of Mexico, causing oil to gush from the ocean floor. In the following months, hundreds of millions of gallons of oil spewed into the gulf waters. The spill produced large plumes of oil under the sea and an oil slick on the surface as large as 24,000 square kilometers (9,100 square miles). The oil slick coated wetlands in the U.S. states of Louisiana and Mississippi, killing marsh plants and aquatic organisms such as crabs and fish. Birds, such as pelicans, became coated in oil and were unable to fly or access food. More than two million animals died as a result of the Deepwater Horizon oil spill."
+    },
+    "skills": [
+        {
+            "skill": "Graphic Design",
+            "value": "80%",
+            "icon": "../../assets/skills/html.svg"
+        },
+        {
+            "skill": "Adobe Illustrator",
+            "value": "80%",
+            "icon": "../../assets/skills/css.svg"
+        },
+        {
+            "skill": "Adobe Photoshop",
+            "value": "80%",
+            "icon": "../../assets/skills/javascript.svg"
+        },
+        {
+            "skill": "Rhino 3D",
+            "value": "60%",
+            "icon": "../../assets/skills/angular.svg"
+        },
+        {
+            "skill": "Microsoft Word",
+            "value": "80%",
+            "icon": "../../assets/skills/java.svg"
+        },
+        {
+            "skill": "Microsoft Powerpoint",
+            "value": "70%",
+            "icon": "../../assets/skills/bootstrap.svg"
+        },
+        {
+            "skill": "Footwear Design",
+            "value": "90%",
+            "icon": "../../assets/skills/mysql.svg"
+        },
+        {
+            "skill": "Sketching/Rendering",
+            "value": "70%",
+            "icon": "../../assets/skills/mongodb.svg"
+        }
+    ],
+    "work": {
+        "education" : [
+            {
+                "level" : "B.Tech",
+                "school" : "Bhagwan Parshuram Institute Of Technology",
+                "location" : "Delhi, India",
+                "percentage" : "87.5%"
+            },
+            {
+                "level" : "12th",
+                "school" : "St. Margaret Sr. Sec. School",
+                "location" : "Delhi, India",
+                "percentage" : "91.2%"
+            },
+            {
+                "level" : "10th",
+                "school" : "St. Margaret Sr. Sec. School",
+                "location" : "Delhi, India",
+                "percentage" : "85.5%"
+            }
+            
+        ],
+        "experience" : [
+            {
+                "company" : "Biz2Credit | Biz2X",
+                "location" : "Noida, India",
+                "designation" : "Software Engineer",
+                "project" : "Biz2X Pro"
+            },
+            {
+                "company" : "Infosys",
+                "location" : "Bengaluru, India",
+                "designation" : "Senior System Engineer",
+                "project" : "Converge, CMA, Martini"
+            },
+            {
+                "company" : "Infosys",
+                "location" : "Bengaluru, India",
+                "designation" : "System Engineer",
+                "project" : "Converge, CMA, Martini"
+            },
+            {
+                "company" : "Infosys",
+                "location" : "Mysore, India",
+                "designation" : "System Engineer Trainee",
+                "project" : "Converge, CMA, Martini"
+            }
+        ]
+    },
+    "contact": [
+        {
+          "property": "Name",
+          "value": "Srishti Bhargava",
+          "icon": "bi bi-person-fill"
+        },
+        {
+          "property": "Address",
+          "value": "Noida, India",
+          "icon": "bi bi-pin-map-fill"
+        },
+        {
+          "property": "Email",
+          "value": "srishtibhargava3011@gmail.com",
+          "icon": "bi bi-envelope-fill"
+        },
+        {
+          "property": "Phone",
+          "value": "9811832438",
+          "icon": "bi bi-telephone-fill"
+        }
+      ],
+    "social":{
+        "facebook": "https://www.facebook.com/profile.php?id=100076899645197",
+        "instagram": "https://www.instagram.com/srishti_bhargava_/",
+        "linkedin":"https://www.linkedin.com/in/srishti-bhargava-876617216/"
+    }
+}
