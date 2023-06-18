@@ -12,7 +12,7 @@ export class InfoService {
         },
         "about": {
             "intro": "I'm Manan and I'm a Frontend Developer.",
-            "details": "Oil spills are another source of water pollution. In April 2010, the Deepwater Horizon oil rig exploded in the Gulf of Mexico, causing oil to gush from the ocean floor. In the following months, hundreds of millions of gallons of oil spewed into the gulf waters. The spill produced large plumes of oil under the sea and an oil slick on the surface as large as 24,000 square kilometers (9,100 square miles). The oil slick coated wetlands in the U.S. states of Louisiana and Mississippi, killing marsh plants and aquatic organisms such as crabs and fish. Birds, such as pelicans, became coated in oil and were unable to fly or access food. More than two million animals died as a result of the Deepwater Horizon oil spill."
+            "details": "Detail-oriented,responsible and committed engineer. Well acquainted with the Software Development Life Cycle (SDLC).Programming Languages : Java, Typescript, HTML, C, C++. Tools : Eclipse IDE, Netbeans IDE. Frameworks : Spring, Angular. Ability to work in complex, deadline-oriented environment. Ability to learn, adapt and grow. Strong analytical, interpersonal and communication skills."
         },
         "skills": [
             {
@@ -62,19 +62,22 @@ export class InfoService {
                     "level" : "B.Tech",
                     "school" : "Bhagwan Parshuram Institute Of Technology",
                     "location" : "Delhi, India",
-                    "percentage" : "87.5%"
+                    "percentage" : "87.5%",
+                    "years" : "2016-2020"
                 },
                 {
                     "level" : "12th",
                     "school" : "St. Margaret Sr. Sec. School",
                     "location" : "Delhi, India",
-                    "percentage" : "91.2%"
+                    "percentage" : "91.2%",
+                    "years" : "2016"
                 },
                 {
                     "level" : "10th",
                     "school" : "St. Margaret Sr. Sec. School",
                     "location" : "Delhi, India",
-                    "percentage" : "85.5%"
+                    "percentage" : "85.5%",
+                    "years" : "2014"
                 }
                 
             ],
@@ -83,25 +86,29 @@ export class InfoService {
                     "company" : "Biz2Credit | Biz2X",
                     "location" : "Noida, India",
                     "designation" : "Software Engineer",
-                    "project" : "Biz2X Pro"
+                    "project" : "Biz2X Pro",
+                    "years" : "Nov 2022 - Present"
                 },
                 {
                     "company" : "Infosys",
                     "location" : "Bengaluru, India",
                     "designation" : "Senior System Engineer",
-                    "project" : "Converge, CMA, Martini"
+                    "project" : "Converge, CMA, Martini",
+                    "years" : "Jul 2022 - Nov 2022"
                 },
                 {
                     "company" : "Infosys",
                     "location" : "Bengaluru, India",
                     "designation" : "System Engineer",
-                    "project" : "Converge, CMA, Martini"
+                    "project" : "CMA, Martini",
+                    "years" : "Apr 2021 - Jun 2022"
                 },
                 {
                     "company" : "Infosys",
                     "location" : "Mysore, India",
                     "designation" : "System Engineer Trainee",
-                    "project" : "Converge, CMA, Martini"
+                    "project" : "Training Demo",
+                    "years" : "Nov 2020 - Mar 2021"
                 }
             ]
         },
@@ -134,5 +141,6 @@ export class InfoService {
             "twitter":"https://twitter.com/manankataria97?s=11"
         }
     }
+    
     constructor() { }
 }

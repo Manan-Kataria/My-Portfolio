@@ -6,10 +6,10 @@
             <div class="subHeading">
                 Education
             </div>
-            <div *ngFor="let edu of education" class="card" style="">
+            <div *ngFor="let edu of education, let i=index" class="card" [ngClass]="i % 2 != 0 ? 'bg-light text-dark' : 'bg-danger text-light'">
                 <!-- <img src="..." class="card-img-top" alt="..."> -->
                 <div class="card-body">
-                  <h5 class="card-title"> {{edu?.level}} </h5>
+                  <h5 class="card-title"> {{edu?.level}} - ({{edu?.years}})</h5>
                   <p class="card-text"> {{edu?.school}}, {{edu?.location}}</p>
                   <p class="card-text"> {{edu?.percentage}} </p>
                   <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
@@ -20,10 +20,10 @@
             <div class="subHeading">
                 Experience
             </div>
-            <div *ngFor="let exp of experience" class="card" style="">
+            <div *ngFor="let exp of experience, let i=index" class="card" [ngClass]="i % 2 == 0 ? 'bg-light text-dark' : 'bg-danger text-light'">
                 <!-- <img src="..." class="card-img-top" alt="..."> -->
                 <div class="card-body">
-                  <h5 class="card-title"> {{exp?.designation}} </h5>
+                  <h5 class="card-title"> {{exp?.designation}} - ({{exp?.years}})</h5>
                   <p class="card-text"> {{exp?.company}}, {{exp?.location}} </p>
                   <p class="card-text"> {{exp?.project}} </p>
                   <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
