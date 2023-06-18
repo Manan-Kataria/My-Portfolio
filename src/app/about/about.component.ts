@@ -18,7 +18,7 @@ export class AboutComponent implements OnInit {
 
   downloadFunc(){
     var anchor : any = document.createElement('a');
-    anchor.setAttribute('href','../../assets/documents/MyCV.pdf');
+    anchor.setAttribute('href','assets/documents/MyCV.pdf');
     anchor.setAttribute('download','');
     document.body.appendChild(anchor);
     anchor.click();

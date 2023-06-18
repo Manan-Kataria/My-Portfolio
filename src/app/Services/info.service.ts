@@ -12,48 +12,48 @@ export class InfoService {
         },
         "about": {
             "intro": "I'm Manan and I'm a Frontend Developer.",
-            "details": "Detail-oriented,responsible and committed engineer. Well acquainted with the Software Development Life Cycle (SDLC).Programming Languages : Java, Typescript, HTML, C, C++. Tools : Eclipse IDE, Netbeans IDE. Frameworks : Spring, Angular. Ability to work in complex, deadline-oriented environment. Ability to learn, adapt and grow. Strong analytical, interpersonal and communication skills."
+            "details": "Software engineer with 2.7+ years of experience facilitating cutting edge solution with wide range of technical skills. Ability to develop interactive and user-centerer website.Excellent problem-solving skills and ability to perform well in team. Passionate about coding and learning new technologies."
         },
         "skills": [
             {
                 "skill": "HTML",
                 "value": "80%",
-                "icon": "../../assets/skills/html.svg"
+                "icon": "assets/skills/html.svg"
             },
             {
                 "skill": "CSS",
                 "value": "60%",
-                "icon": "../../assets/skills/css.svg"
+                "icon": "assets/skills/css.svg"
             },
             {
                 "skill": "Javascript",
                 "value": "80%",
-                "icon": "../../assets/skills/javascript.svg"
+                "icon": "assets/skills/javascript.svg"
             },
             {
                 "skill": "Angular",
                 "value": "80%",
-                "icon": "../../assets/skills/angular.svg"
+                "icon": "assets/skills/angular.svg"
             },
             {
                 "skill": "Java",
                 "value": "60%",
-                "icon": "../../assets/skills/java.svg"
+                "icon": "assets/skills/java.svg"
             },
             {
                 "skill": "Bootstrap",
                 "value": "60%",
-                "icon": "../../assets/skills/bootstrap.svg"
+                "icon": "assets/skills/bootstrap.svg"
             },
             {
                 "skill": "MySql",
                 "value": "60%",
-                "icon": "../../assets/skills/mysql.svg"
+                "icon": "assets/skills/mysql.svg"
             },
             {
                 "skill": "MongoDB",
                 "value": "50%",
-                "icon": "../../assets/skills/mongodb.svg"
+                "icon": "assets/skills/mongodb.svg"
             }
         ],
         "work": {

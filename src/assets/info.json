@@ -12,42 +12,42 @@
         {
             "skill": "HTML",
             "value": "80%",
-            "icon": "../../assets/skills/html.svg"
+            "icon": "assets/skills/html.svg"
         },
         {
             "skill": "CSS",
             "value": "60%",
-            "icon": "../../assets/skills/css.svg"
+            "icon": "assets/skills/css.svg"
         },
         {
             "skill": "Javascript",
             "value": "80%",
-            "icon": "../../assets/skills/javascript.svg"
+            "icon": "assets/skills/javascript.svg"
         },
         {
             "skill": "Angular",
             "value": "80%",
-            "icon": "../../assets/skills/angular.svg"
+            "icon": "assets/skills/angular.svg"
         },
         {
             "skill": "Java",
             "value": "60%",
-            "icon": "../../assets/skills/java.svg"
+            "icon": "assets/skills/java.svg"
         },
         {
             "skill": "Bootstrap",
             "value": "60%",
-            "icon": "../../assets/skills/bootstrap.svg"
+            "icon": "assets/skills/bootstrap.svg"
         },
         {
             "skill": "MySql",
             "value": "60%",
-            "icon": "../../assets/skills/mysql.svg"
+            "icon": "assets/skills/mysql.svg"
         },
         {
             "skill": "MongoDB",
             "value": "50%",
-            "icon": "../../assets/skills/mongodb.svg"
+            "icon": "assets/skills/mongodb.svg"
         }
     ],
     "work": {
