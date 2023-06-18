@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: 'skills', component: SkillsComponent},
   {path: 'work', component: WorkComponent},
   {path: 'contact', component: ContactComponent},
-  {path: '**', component: PageNotFoundComponent},
+  {path: '**', redirectTo:''},
 ];
 
 @NgModule({

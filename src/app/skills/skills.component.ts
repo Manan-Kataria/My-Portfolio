@@ -15,7 +15,6 @@ export class SkillsComponent implements OnInit {
   
   ngOnInit(): void {
     this.skills = this.infoService?.user?.skills;
-    console.log("hey");
   }
 
 }
