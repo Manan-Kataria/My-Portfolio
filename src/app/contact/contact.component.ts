@@ -36,8 +36,7 @@ export class ContactComponent implements OnInit {
         { name: this.contactForm.controls.name.value, replyto: this.contactForm.controls.email.value, message: this.contactForm.controls.body.value },
         { 'headers': headers }).subscribe(
           (response :any) => {
-            //console.log(response);//
-            console.log(response);
+            console.log("Hi");
             this.toastr.success('Email sent successfully', 'Success');
             this.contactForm.reset();
           }
