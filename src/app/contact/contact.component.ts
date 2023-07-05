@@ -12,40 +12,40 @@ import { ToastrService } from 'ngx-toastr';
 export class ContactComponent implements OnInit {
 
   constructor(
-    private infoService : InfoService,
+    private infoService: InfoService,
     private fb: FormBuilder,
     private toastr: ToastrService,
-    private http : HttpClient
+    private http: HttpClient
   ) { }
   contactForm: any;
-  contactInfo : any;
+  contactInfo: any;
   ngOnInit(): void {
     this.contactInfo = this.infoService?.user?.contact;
-    this.contactForm=this.fb.group({
-      "name" : ["", [Validators.required]],
-      "email" : ["", [Validators.required, Validators.email]],
-      "subject" : ["", [Validators.required]],
-      "body" : ["", [Validators.required]]
+    this.contactForm = this.fb.group({
+      "name": ["", [Validators.required]],
+      "email": ["", [Validators.required, Validators.email]],
+      "subject": ["", [Validators.required]],
+      "body": ["", [Validators.required]]
     });
   }
 
   onSubmit() {
-   
-      const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-      this.http.post('https://formspree.io/f/xbjvjrne',
-        { name: this.contactForm.controls.name.value, replyto: this.contactForm.controls.email.value, message: this.contactForm.controls.body.value },
-        { 'headers': headers }).subscribe(
-          (response :any) => {
-            console.log("Hi");
-            this.toastr.success('Email sent successfully', 'Success');
-            this.contactForm.reset();
-          }
-        );
+
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    this.http.post('https://formspree.io/f/xbjvjrne',
+      { name: this.contactForm.controls.name.value, replyto: this.contactForm.controls.email.value, message: "Subject : "+this.contactForm.controls.subject.value+ "  |  Body : "+this.contactForm.controls.body.value },
+      { 'headers': headers }).subscribe(
+        (response: any) => {
+          console.log("Hi");
+          this.toastr.success('Email sent successfully', 'Success');
+          this.contactForm.reset();
+        }
+      );
   }
 
-  iconClicked(site: string){
-    let url : any = this.infoService.user.social[site];
-    console.log(`${site} clicked`);  
-    window.open(url, '_blank');      
+  iconClicked(site: string) {
+    let url: any = this.infoService.user.social[site];
+    console.log(`${site} clicked`);
+    window.open(url, '_blank');
   }
 }
