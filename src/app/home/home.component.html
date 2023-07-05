@@ -15,14 +15,15 @@
                     </div>
                     <br/><br/>
                     <div class="buttons">
-                        <button (click)="downloadFunc()" class="btn btn-danger"> Download CV </button>
+                        <button *ngIf="home?.cvLink" (click)="downloadFunc()" class="btn btn-danger"> Download CV </button>&nbsp;
+                        <button *ngIf="home?.portfolio" (click)="downloadPortfolio()" class="btn btn-danger"> Download Portfolio </button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="imgBox" style="height: 100%;">
-                <img style="display:inline-block; height: 100%; width: 97%;" src="assets/images/MananTry.png">
+                <img style="display:inline-block; height: 100%; width: 97%;" [src]="home?.pic">
             </div>           
         </div>
     </div>

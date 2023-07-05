@@ -8,11 +8,16 @@ export class InfoService {
         "home": {
             "greetings": "Hi, my name is",
             "name": "Manan Kataria",
-            "about": "and I'm a Frontend Developer"
+            "about": "and I'm a Frontend Developer",
+            "cvLink": "assets/documents/MyCV.pdf",
+            "portfolio": "",
+            "pic": "assets/images/MananTry.png"
         },
         "about": {
             "intro": "I'm Manan and I'm a Frontend Developer.",
-            "details": "Software engineer with 2.7+ years of experience facilitating cutting edge solution with wide range of technical skills. Ability to develop interactive and user-centerer website.Excellent problem-solving skills and ability to perform well in team. Passionate about coding and learning new technologies."
+            "details": "Software engineer with 2.7+ years of experience facilitating cutting edge solution with wide range of technical skills. Ability to develop interactive and user-centerer website.Excellent problem-solving skills and ability to perform well in team. Passionate about coding and learning new technologies.",
+            "cvLink": "assets/documents/MyCV.pdf",
+            "pic": "assets/images/about.JPG"
         },
         "skills": [
             {

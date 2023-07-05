@@ -25,7 +25,15 @@ export class HomeComponent implements OnInit {
 
   downloadFunc(){
     var anchor : any = document.createElement('a');
-    anchor.setAttribute('href','assets/documents/MyCV.pdf');
+    anchor.setAttribute('href',this.home.cvLink);  
+    anchor.setAttribute('download','');
+    document.body.appendChild(anchor);
+    anchor.click();
+    anchor.parentNode.removeChild(anchor);
+}
+  downloadPortfolio(){
+    var anchor : any = document.createElement('a');
+    anchor.setAttribute('href',this.home.portfolio);  
     anchor.setAttribute('download','');
     document.body.appendChild(anchor);
     anchor.click();

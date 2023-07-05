@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
 import { InfoService } from '../Services/info.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contact',
@@ -11,7 +13,9 @@ export class ContactComponent implements OnInit {
 
   constructor(
     private infoService : InfoService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private toastr: ToastrService,
+    private http : HttpClient
   ) { }
   contactForm: any;
   contactInfo : any;
@@ -25,8 +29,18 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  onSubmit(){
-    console.log("Form submitted", this.contactForm);
+  onSubmit() {
+   
+      const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+      this.http.post('https://formspree.io/f/xbjvjrne',
+        { name: this.contactForm.controls.name.value, replyto: this.contactForm.controls.email.value, message: this.contactForm.controls.body.value },
+        { 'headers': headers }).subscribe(
+          (response :any) => {
+            console.log(response);
+            this.toastr.success('Email sent successfully', 'Success');
+            this.contactForm.reset();
+          }
+        );
   }
 
   iconClicked(site: string){
