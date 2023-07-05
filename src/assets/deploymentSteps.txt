@@ -1,0 +1,5 @@
+ng build --prod --output-path docs --base-href My-Portfolio
+
+git commit -m "deploy try"
+
+git push origin dev   
